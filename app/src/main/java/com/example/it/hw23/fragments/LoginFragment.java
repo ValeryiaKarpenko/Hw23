@@ -15,6 +15,10 @@ import com.example.it.hw23.R;
 
 public class LoginFragment extends Fragment {
 
+    private View emailFrTextView;
+    private View passwFrTextView;
+    private View view;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, null);
@@ -33,6 +37,12 @@ public class LoginFragment extends Fragment {
         return view;
     }
 
+
+
+    private void initView(){
+        emailFrTextView = view.findViewById(R.id.email_fr_edit_text);
+        passwFrTextView = view.findViewById(R.id.password_fr_edit_text);
+    }
 
 
 }
